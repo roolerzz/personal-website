@@ -1,48 +1,56 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/62b4c342-11cf-4c4e-9329-e221d879bd70/deploy-status)](https://app.netlify.com/sites/sethihemant/deploys)
 
-<p align="center"><a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener"><img src="https://sourcethemes.com/academic/img/logo_200px.png" alt="Academic logo"></a></p>
+This repository belongs to the static [website](www.sethihemant.com) hosted on netlify for the purposes of my personal portfolio and future blog posts and notes purposes. The website has been built using [Hugo](https://gohugo.io/) a static site generator and the [Academic theme](https://sourcethemes.com/academic/).
 
-# Academic Kickstart: The Template for [Academic Website Builder](https://sourcethemes.com/academic/)
+#### Here are some raw notes I captured during the excersise I went through while building this website
 
-[**Academic**](https://github.com/gcushen/hugo-academic) makes it easy to create a beautiful website for free using Markdown, Jupyter, or RStudio. Customize anything on your site with widgets, themes, and language packs. [Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://sourcethemes.com/academic/#expo).
+Notes:
 
-**Academic Kickstart** provides a minimal template to kickstart your new website.
+- Looked for the available static site generators for personal portfolios and blog.
+  - <https://forestry.io/blog/hugo-and-jekyll-compared/>
+  - [X] Hugo
+    - <https://sijinjoseph.com/>
+    - <https://flaviocopes.com/start-blog-with-hugo/>
+    - <https://medium.com/@tcguy/how-to-create-personal-blog-using-hugo-within-a-day-e9e87ba152d9>9>
+    - <https://dev.to/effingkay/build-your-own-blog-with-hugo-and-netlify-oi7>
+    - <https://employbl.com/blog/rebuilding-personal-site-netlify-and-hugo>
+    - <https://blog.kovah.de/en/2019/static-blog-with-hugo/>
+    - <https://templates.netlify.com/template/hugo-starter-blog-theme-kaldi/>
+    - <https://forestry.io/blog/hugo-and-jekyll-compared/>
+    - <https://georgecushen.com/create-your-website-with-hugo/>
+  - Jekkyl
+  - <https://www.gatsbyjs.org/>
+- Going With Hugo.
+  - Select a Theme.
+    - [X] <https://themes.gohugo.io/academic/>
+    - <https://themes.gohugo.io/hugo-goa/>
+  - Syntax Highlighting in Hugo.
+    - <https://gohugo.io/content-management/syntax-highlighting/>
+- Where to Host the static website?
+  - [X] Netlify
+  - Github pages.
+- Netlify to host my static website.
+  - Get Custom domains on [Netlify](https://docs.netlify.com/domains-https/custom-domains/).
+  - Buying sethihemant.com(Ended up choosing namecheap as it was the cheapest and was also providing privacy protection(didn't knew until I build this what that was))
+- Choosing a theme on Academic.
+  - minimal
 
-- 👉 [**Get Started**](#install)
-- 📚 [View the **documentation**](https://sourcethemes.com/academic/docs/)
-- 💬 [Chat with the **Academic community**](https://spectrum.chat/academic) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@source_themes](https://twitter.com/source_themes) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithAcademic](https://twitter.com/search?q=%23MadeWithAcademic&src=typd)
-- 💡 [Request a **feature** or report a **bug**](https://github.com/gcushen/hugo-academic/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- :heart: **Support development** of Academic:
-  - ☕️ [**Donate a coffee**](https://paypal.me/cushen)
-  - 💵 [Become a backer on **Patreon** and **unlock rewards**](https://www.patreon.com/cushen)
-  - 🖼️ [Decorate your laptop or journal with an Academic **sticker**](https://www.redbubble.com/people/neutreno/works/34387919-academic)
-  - 👕 [Wear the **T-shirt**](https://academic.threadless.com/)
-  - :woman_technologist: [**Contribute**](https://sourcethemes.com/academic/docs/contribute/)
+Example Hugo Websites with Academic:
 
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png)](https://github.com/gcushen/hugo-academic/)
+- <https://www.jantsje.nl/>
+- <https://www.rohitsalecha.com/post>
+- create_a_personal_blog_using_hugo_academic_netlify/
+- <https://www.wadeboys.com/>
+- <https://pedrolgodoy.netlify.app/>
+- <https://malco.io/>
 
-## Install
+Some of the Hugo themes I considered:
 
-You can choose from one of the following four methods to install:
-
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-
-Then [personalize your new site](https://sourcethemes.com/academic/docs/get-started/).
-
-## Ecosystem
-
-* **[Academic Admin](https://github.com/sourcethemes/academic-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[Academic Scripts](https://github.com/sourcethemes/academic-scripts):** Scripts to help migrate content to new versions of Academic
-
-## License
-
-Copyright 2017-present [George Cushen](https://georgecushen.com).
-
-Released under the [MIT](https://github.com/sourcethemes/academic-kickstart/blob/master/LICENSE.md) license.
-
-[![Analytics](https://ga-beacon.appspot.com/UA-78646709-2/academic-kickstart/readme?pixel)](https://github.com/igrigorik/ga-beacon)
+- <https://themes.gohugo.io/personal-web/>
+- <https://themes.gohugo.io/academia-hugo/>
+- <https://themes.gohugo.io/>
+- <https://themes.gohugo.io/hugo-goa/>
+- <https://themes.gohugo.io/hugo-universal-theme/>
+- <https://themes.gohugo.io/hugo-coder/>
+- <https://themes.gohugo.io/hugo-theme-dimension/>
+- <https://themes.gohugo.io/toha/>
