@@ -27,7 +27,7 @@ date_format = "Jan 2006"
   description = """Backend Engineer helping with Ingesting 3D modelled spatial data into our backend Spatial Services, and help support Inventory systems."""
 
 [[experience]]
-  title = "I.T. Analyst"
+  title = "Software Engineer"
   company = "CVS Health"
   company_url = "https://cvshealth.com/"
   location = "Rhode Island"
@@ -36,10 +36,10 @@ date_format = "Jan 2006"
   description = """Worked as a DevOps engineer and Software developer building and supporting greenfield applications."""
 
 [[experience]]
-  title = "Systems Engineer"
+  title = "Software Engineer"
   company = "Tata Consultancy Services"
   company_url = "https://www.tcs.com/"
-  location = "Rhode Island"
+  location = "Gurgaon, India"
   date_start = "2012-06-25"
   date_end = "2016-09-08"
   description = """Worked with CVS health as a client on the enterprise pharmacy application using Java EE and related technologies."""  
