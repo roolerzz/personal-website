@@ -25,6 +25,7 @@ interests:
 - Kubernetes
 - Kafka
 - Distributed Systems
+- DevOps
 
 education:
   courses:
@@ -43,6 +44,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/sethihemant
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/hemantsethi/
 # - icon: google-scholar
 #   icon_pack: ai
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -51,9 +55,9 @@ social:
   link: https://github.com/roolerzz
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-- icon: cv
-  icon_pack: ai
-  link: files/cv.pdf
+#- icon: cv
+#  icon_pack: ai
+#  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: "sethi.hemant@gmail.com"
@@ -65,4 +69,6 @@ email: "sethi.hemant@gmail.com"
 # - Visitors
 ---
 
-Hemant is a Softare Engineer at WeWork. His interests include designing and implementing backend systems, prefers writing them in Go and Java in a cloud native environment. He likes reading/learning about high scale distributed systems on a regular basis, with an aspiration to built his own. He is also fascinated by the innovation in the database world with the likes of DynamoDB, Cassandra, Aurora etc.
+Hemant is a technology enthusiast with over 8+ years of experience in software industry. His interests include designing and implementing backend apis/systems, prefers writing them in Go Or Java in a cloud native environment. He is inquisitive about high scale distributed systems and is fascinated by the innovation in the database world with the likes of DynamoDB, Cassandra, Aurora etc.
+
+In his free time he is either reading books/blogs or playing some FPS games(in love with CS both 1.6/Go and recently COD Warzone), or binge watching netflix. Likes to occasionally go for hikes in the Bay Area or just a run in the neighborhood.
