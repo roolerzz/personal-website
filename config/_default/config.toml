@@ -16,6 +16,9 @@ baseurl = "https://sethihemant.netlify.app/"
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
 copyright = ""
 
+# Configuration for Google Analytics
+googleAnalytics = ""
+
 ############################
 ## Advanced options below ##
 ############################
@@ -33,14 +36,16 @@ defaultContentLanguageInSubdir = false
 removePathAccents = true  # Workaround for https://github.com/gohugoio/hugo/issues/5687
 
 summaryLength = 30  # Listing summary length in words. Also, see `abstract_length` in `params.toml`.
-paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
+
+[pagination]
+  pagerSize = 10  # Number of items per page in paginated lists.
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
-  authors = "/author/:slug/"
+  authors = "/authors/:slug/"
   tags = "/tag/:slug/"
   categories = "/category/:slug/"
   publication_types = "/publication-type/:slug/"
@@ -79,6 +84,7 @@ ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "
   category = "categories"
   publication_type = "publication_types"
   author = "authors"
+  authors = "authors"  # Add this line to support both singular and plural forms
 
 # Related content.
 [related]

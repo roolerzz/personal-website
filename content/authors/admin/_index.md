@@ -5,6 +5,7 @@ title: Hemant Sethi
 # Username (this should match the folder name)
 authors:
 - admin
+author: admin
 
 # Is this the primary user of the site?
 superuser: true
@@ -69,6 +70,10 @@ email: "sethi.hemant@gmail.com"
 # - Visitors
 ---
 
-Hemant is a technology enthusiast with over 8+ years of experience in software industry. His interests include designing and implementing backend apis/systems, prefers writing them in Go Or Java in a cloud native environment. He is inquisitive about high scale distributed systems and is fascinated by the innovation in the database world with the likes of DynamoDB, Cassandra, Aurora etc.
+Hemant is a Staff Infrastructure Engineer building high-performance data platforms and AI-optimized storage systems. Currently at Crusoe, he's architecting S3-compatible object storage with intelligent caching for GPU-intensive ML workloads.
 
-In his free time he is either reading books/blogs or playing some FPS games(in love with CS both 1.6/Go and recently COD Warzone), or binge watching netflix. Likes to occasionally go for hikes in the Bay Area or just a run in the neighborhood.
+Previously, he led infrastructure initiatives at AWS (Amazon Firehose) serving enterprise customers processing billions of events daily, and revamped WeWork's spatial resource service which powered Space Management and Inventory Management platforms used by customers booking space worldwide across 800+ global locations on wework.com.
+
+His technical focus spans AI storage optimization, real-time data streaming, and distributed systems architecture and draws inspiration from foundational distributed systems research including Dynamo, Spanner, GFS, Memcached, Tao, Raft etc. His current research interests include RDMA-enabled object storage, node-local caching strategies for GPU clusters, multi-protocol data access optimization (NFS/S3), and storage tier design for large-scale model training. 
+
+He's actively exploring publication opportunities in these areas and welcomes collaboration with researchers and practitioners working on AI infrastructure challenges.
