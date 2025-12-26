@@ -1,0 +1,202 @@
+/* Import ABC Favorit font (Anthropic uses this) - fallback to similar fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* Apply Anthropic-style font globally with subtle background */
+:root {
+    /* Anthropic uses ABC Favorit, we'll use IBM Plex Sans which is similar */
+    --font-family: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    /* Light mode: warm beige/cream background inspired by Anthropic - use same color everywhere */
+    --custom-bg: #faf8f5;
+    --custom-entry: #faf8f5;
+}
+
+:root[data-theme="dark"] {
+    /* Dark mode: subtle warm dark background - use same color everywhere */
+    --custom-bg: #1a1816;
+    --custom-entry: #1a1816;
+}
+
+body {
+    font-family: var(--font-family) !important;
+    font-size: 15px;
+    line-height: 1.6;
+    background: var(--custom-bg) !important;
+}
+
+/* Override default backgrounds for consistent warm tone */
+.main {
+    background: var(--custom-bg);
+}
+
+.post-entry, .post-single, .post-content {
+    background: var(--custom-bg) !important;
+}
+
+/* Adjust heading sizes for better hierarchy */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Profile mode enhancements */
+.profile .profile_inner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.profile .profile_inner span {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.85;
+}
+
+/* Improve button styling */
+.profile .buttons .button {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.profile .buttons .button:hover {
+    transform: translateY(-2px);
+}
+
+/* Enhance social icons */
+.social-icons a {
+    transition: all 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Improve content readability */
+.post-content {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.post-content p {
+    margin-bottom: 1.25rem;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Enhance code blocks */
+code {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9em;
+}
+
+/* Add subtle hover effects to menu items */
+.nav #menu a {
+    transition: opacity 0.2s ease;
+}
+
+.nav #menu a:hover {
+    opacity: 0.7;
+}
+
+/* Improve spacing for experience/content sections */
+.post-content hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid var(--border);
+    opacity: 0.5;
+}
+
+/* Better visual hierarchy for job titles and companies */
+.post-content h2 + p strong {
+    font-weight: 600;
+    font-size: 1.05em;
+}
+
+/* Enhance list styling in content */
+.post-content ul li::marker {
+    color: var(--primary);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve profile image styling */
+.profile img {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add subtle animation to profile on load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile .profile_inner {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Hide share buttons (X, LinkedIn, Reddit, etc.) */
+.share-buttons {
+    display: none !important;
+}
+
+/* Make font weight more noticeable */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family) !important;
+    letter-spacing: -0.02em;
+}
+
+.nav, .nav a, #menu {
+    font-family: var(--font-family) !important;
+}
+
+/* Remove borders for seamless appearance */
+.post-content {
+    background: var(--custom-bg) !important;
+    padding: 0;
+    border-radius: 0;
+}
+
+.post-single {
+    border: none !important;
+    border-radius: 0;
+    overflow: visible;
+}
+
+/* Remove borders from post entries too */
+.post-entry {
+    border: none !important;
+    background: var(--custom-bg) !important;
+}

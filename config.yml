@@ -1,0 +1,112 @@
+baseURL: "https://sethihemant.netlify.app/"
+title: "Hemant Sethi"
+theme: "PaperMod"
+languageCode: "en-us"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: "Hemant Sethi"
+  description: "Staff Software Engineer - Building high-performance data platforms and AI-optimized storage systems"
+  author: "Hemant Sethi"
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowFullTextinRSS: true
+
+  # Profile Mode
+  profileMode:
+    enabled: true
+    title: "Hemant Sethi"
+    subtitle: "Staff Software Engineer | AI Storage & Distributed Systems"
+    imageUrl: "/images/avatar.jpg"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: About
+        url: /about/
+      - name: Experience
+        url: /experience/
+      - name: Publications
+        url: /publications/
+      - name: Research
+        url: /research/
+      - name: Projects
+        url: /projects/
+
+  # Social Icons
+  socialIcons:
+    - name: email
+      url: "mailto:sethi.hemant@gmail.com"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/hemantsethi/"
+    - name: github
+      url: "https://github.com/roolerzz"
+    - name: twitter
+      url: "https://twitter.com/sethihemant"
+
+  # Home page info
+  homeInfoParams:
+    Title: "Hemant Sethi"
+    Content: "Staff Infrastructure Engineer building high-performance data platforms and AI-optimized storage systems"
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: experience
+      name: Experience
+      url: /experience/
+      weight: 20
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 30
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 35
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 40
+    - identifier: blog
+      name: Blog
+      url: /posts/
+      weight: 50
+
+# Taxonomies
+taxonomies:
+  tag: tags
+  category: categories
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
