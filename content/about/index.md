@@ -4,21 +4,21 @@ layout: "single"
 hideAuthor: true
 ---
 
-I'm a Staff Software Engineer with over 12 years of experience building high-performance data platforms and AI-optimized storage systems. My work focuses on solving infrastructure challenges at the intersection of distributed systems and machine learning.
+I'm a Staff Software Engineer with 12+ years building high-performance data platforms and AI storage infrastructure. I work at the intersection of distributed systems and machine learning, focusing on keeping expensive GPUs fed with data.
 
-Currently at Crusoe, I'm building S3-compatible object storage with intelligent caching for GPU-intensive ML training. The challenge? Minimizing data access latency to keep expensive GPUs busy and maximize their utilization. I'm working on dual-protocol (NFS/S3) storage interfaces that bridge legacy HPC workflows with modern cloud-native pipelines, along with node-local caching strategies to eliminate storage bottlenecks.
+At Crusoe, I am building S3-compatible object storage with node-local(Tier-0) caching for ML training and inference workloads. My work centers on minimizing data access latency for the GPUs and solve storage bottlenecks which directly impact training costs by minimizing GPU Idle time, which is the largest contributor to the TCO of an AI Datacenter.
 
-Before Crusoe, I spent several years at AWS working on Amazon Firehose, where I led the architectural migration of Dynamic Partitioning to a microservices architecture. This involved scaling data delivery to support high throughput delivery to S3 across large number of partitions(s3-prefixes). The work required deep optimization of distributed systems—from rethinking partitioning strategies using Akka Streams to profiling Java services for memory leaks and GC issues.
+At AWS, I led the Dynamic Partitioning migration for Amazon Firehose, rearchitecting the service to handle high-throughput delivery across thousands of S3 prefixes. This meant redesigning partitioning logic with Akka Streams (which achieved 4x throughput gains, and 10x default partition count gains), solving some nasty native memory leaks in Java services, and tuning GC behavior under production load.
 
-Earlier at WeWork, I helped migrate Spatial Data Service from PHP to Go/gRPC/Kubernetes, improving latency for a system that served as the source of truth for 800+ global locations. At Wework, I was also involved in building event-driven architecture with Kafka and added comprehensive observability stack.
+At WeWork, I migrated the Spatial Data Service from PHP to Go/gRPC/Kubernetes, dropping P99 latency to 100ms for a system serving 800+ locations worldwide. I also built out Kafka-based event streaming with Avro schemas and built out the service's observability stack using Prometheus, Grafana and Jaegar.
 
 ## What Drives Me
 
-I'm fascinated by the systems challenges in AI infrastructure, particularly around storage. How do you efficiently move massive datasets to hungry GPUs? What's the right caching strategy when your data access patterns across Training or Inference workloads? How do you benchmark storage for such workloads?
+Storage is the unglamorous bottleneck in AI infrastructure. Everyone talks about GPU clusters and model architectures, but the hardest problems are often in moving petabytes of training data fast enough to keep those GPUs saturated. I work on the boring parts that make the exciting parts possible: RDMA-enabled object stores, pre-fetching strategies for transformer training, benchmarking tools that actually measure what matters.
 
-I have been learning from  various foundational systems papers such as Dynamo, Spanner, GFS, Raft etc and try to apply those principles to modern ML infrastructure challenges.
+I spend a lot of time reading foundational papers like Dynamo, Spanner, GFS, Raft and figuring out how those ideas apply (or don't) to modern ML workloads. The patterns are familiar but the scale and access patterns are different enough to require new approaches.
 
-I'm actively exploring research and publication opportunities in AI storage systems. If you're working on similar problems, writing papers, or organizing conferences in this space, I'd love to connect and collaborate.
+I'm looking for opportunities to publish, present at conferences, and collaborate with researchers working on similar problems. If you're writing papers on storage systems, organizing FAST/OSDI/SOSP sessions, or need peer reviewers for storage-related work, let's talk.
 
 ## Technical Interests
 

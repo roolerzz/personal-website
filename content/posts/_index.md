@@ -2,7 +2,7 @@
 title: "Technical Writing & Paper Analysis"
 ---
 
-I write about distributed systems, storage architecture, and AI infrastructure, combining academic research with production systems experience. My focus is on bridging theory and practice—analyzing foundational papers and emerging research while sharing insights from building large-scale systems.
+I write about distributed systems, storage architecture, and AI infrastructure, combining academic research with production systems experience. My focus is on bridging theory and practice, analyzing foundational papers and emerging research while sharing insights from building large-scale systems.
 
 ## Topics
 

@@ -4,35 +4,34 @@ layout: "single"
 hideAuthor: true
 ---
 
-As an aspiring technical author and industry speaker, I'm actively pursuing publication opportunities in AI storage systems and distributed systems infrastructure. My goal is to contribute to both academic research and industry knowledge sharing in these fields.
+I'm working on publishing technical papers and giving talks on storage systems being built for the new wave of AI/ML infrastructure.
 
 ## Research Areas
 
 ### AI Storage Optimization
-- **RDMA-enabled object storage for ML workloads**: Exploring low-latency data access patterns for GPU-intensive training, with focus on RDMA integration for sub-microsecond data transfers
-- **Node-local (Tier-0) caching strategies**: Investigating pre-fetching algorithms and cache eviction policies optimized for training/infernece workload patterns in frontier models.
-- **Multi-protocol data access (NFS/S3)**: Analyzing consistency models and performance tradeoffs when supporting both POSIX and object storage semantics over unified datasets
+- **RDMA-enabled object storage**: How to get sub-microsecond latency for GPU training workloads
+- **Tier-0 caching**: Pre-fetching and eviction policies for transformer training access patterns
+- **Multi-protocol storage**: Making NFS and S3 work on the same data without breaking consistency
 
 ### Distributed Systems Performance
-- **Storage benchmarking methodologies**: Developing frameworks to profile I/O bottlenecks for NFS and Object Storage Systems as well as support PyTorch/TensorFlow data loading pipelines
-- **High-throughput data streaming**: Architectural patterns for scaling ingestion and delivery platforms to billions of events per day using reactive programming models (Akka Streams)
+- **Storage benchmarking**: Building tools that measure what actually matters for ML workloads (not just random IOPS)
+- **High-throughput streaming**: Scaling data pipelines to billions of events using Akka Streams and reactive patterns
 
-## Potential Publication Topics
+## Working On
 
-I'm preparing material for technical articles on:
+- **Storage benchmarking for frontier model training**: What metrics actually matter when you're loading 100TB+ datasets
+- **RDMA performance in production**: Real-world numbers from GPU clusters, not vendor benchmarks
+- **Tier-0 caching patterns**: When pre-fetching helps and when it doesn't
+- **Multi-protocol storage tradeoffs**: The consistency problems nobody talks about
 
-- **Storage Architecture for GPU-Intensive ML Training**: Comprehensive analysis of storage bottlenecks in large-scale model training and mitigation strategies
-- **Benchmarking Tools for Storage Systems**: Comprehensive analysis of benchmarking tools used across storage systems
-- **Tier-0 Caching in AI Infrastructure**: Design patterns for node-local caching in distributed GPU clusters
-- **Multi-Protocol Storage: Bridging HPC and Cloud-Native ML**: Technical challenges in supporting both NFS and S3 protocols
+## Looking For
 
-## Collaboration & Speaking
+- **Co-authors** for papers on storage systems or ML infrastructure
+- **Speaking slots** at FAST, OSDI, SoCC, MLSys, or practitioner conferences
+- **Peer review** opportunities (I'll review papers on distributed systems, storage, or ML infrastructure)
+- **Collaboration** on open-source benchmarking tools or storage projects
 
-I welcome opportunities for:
-- **Co-authorship** on papers related to AI infrastructure, storage systems, or distributed computing
-- **Conference speaking** at systems conferences (FAST, OSDI, SoCC, etc.) or industry events
-- **Technical blog posts** and industry publications
-- **Peer review** and technical feedback on related work
+If you're organizing conferences, running workshops, or writing papers in this space—or if you just want to talk about storage performance—reach out.
 
 ### Academic & Industry Interests
 My research draws inspiration from foundational distributed systems work (Dynamo, Spanner, GFS, Raft, Tao, Memcached) and aims to bridge academic research with real-world production challenges in AI infrastructure.

@@ -1,25 +1,33 @@
-/* Import ABC Favorit font (Anthropic uses this) - fallback to similar fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+/* System fonts - no web font loading, faster, native to each OS */
+/* This is what GitHub, Medium (body), and Apple use */
+/* CACHE BUSTER v2.0 - Force browser to reload CSS */
 
-/* Apply Anthropic-style font globally with subtle background */
+/* Apply clean system fonts with subtle background */
 :root {
-    /* Anthropic uses ABC Favorit, we'll use IBM Plex Sans which is similar */
-    --font-family: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    /* Light mode: warm beige/cream background inspired by Anthropic - use same color everywhere */
+    /* System font stack - native to each OS */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    /* Light mode: warm beige/cream background */
     --custom-bg: #faf8f5;
     --custom-entry: #faf8f5;
 }
 
 :root[data-theme="dark"] {
-    /* Dark mode: subtle warm dark background - use same color everywhere */
+    /* Dark mode: subtle warm dark background */
     --custom-bg: #1a1816;
     --custom-entry: #1a1816;
 }
 
+/* Override body font size with maximum specificity */
+html {
+    font-size: 14px !important;  /* Root font size - affects all rem units */
+}
+
+html body,
+body.list,
 body {
     font-family: var(--font-family) !important;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 10px !important;
+    line-height: 1.7 !important;
     background: var(--custom-bg) !important;
 }
 
@@ -32,16 +40,16 @@ body {
     background: var(--custom-bg) !important;
 }
 
-/* Adjust heading sizes for better hierarchy */
+/* Adjust heading sizes for better hierarchy - reduced proportionally */
 h1 {
-    font-size: 2.25rem;
+    font-size: 1.875rem;  /* 30px - reduced from 2.25rem (36px) */
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;  /* 24px - reduced from 1.75rem (28px) */
     font-weight: 600;
     line-height: 1.3;
     margin-top: 2rem;
@@ -49,7 +57,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;  /* 18px - reduced from 1.25rem (20px) */
     font-weight: 600;
     line-height: 1.4;
 }
@@ -145,10 +153,13 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Improve profile image styling */
+/* Improve profile image styling - fix aspect ratio distortion */
 .profile img {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    object-fit: cover !important;  /* Crop image to fit container without distortion */
+    width: 120px !important;
+    height: 120px !important;
 }
 
 /* Add subtle animation to profile on load */
