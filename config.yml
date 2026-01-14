@@ -46,12 +46,12 @@ params:
         url: /about/
       - name: Experience
         url: /experience/
-      - name: Publications
-        url: /publications/
       - name: Research
         url: /research/
-      - name: Projects
-        url: /projects/
+      - name: Blog
+        url: /posts/
+      - name: Notes
+        url: /notes/
 
   # Social Icons
   socialIcons:
@@ -67,7 +67,7 @@ params:
   # Home page info
   homeInfoParams:
     Title: "Hemant Sethi"
-    Content: "Staff Infrastructure Engineer building high-performance data platforms and AI-optimized storage systems"
+    Content: "Staff Software Engineer building high-performance data platforms and AI-optimized storage systems"
 
 menu:
   main:
@@ -79,21 +79,17 @@ menu:
       name: Experience
       url: /experience/
       weight: 20
-    - identifier: publications
-      name: Publications
-      url: /publications/
-      weight: 30
     - identifier: research
       name: Research
       url: /research/
-      weight: 35
-    - identifier: projects
-      name: Projects
-      url: /projects/
-      weight: 40
+      weight: 30
     - identifier: blog
       name: Blog
       url: /posts/
+      weight: 40
+    - identifier: notes
+      name: Notes
+      url: /notes/
       weight: 50
 
 # Taxonomies

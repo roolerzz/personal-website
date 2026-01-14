@@ -7,11 +7,11 @@ hideAuthor: true
 ## Staff Software Engineer (Storage)
 **Crusoe Energy Systems(Crusoe AI)**
 
-Leading architecture and development of Crusoe's AI-optimized object storage platform for high-performance data access in GPU-intensive ML workloads.
+Co-leading architecture and development of Crusoe's AI-optimized object storage platform for high-performance data access in GPU-intensive ML workloads.
 
-- Implementing dual-protocol storage supporting both NFS and S3 access patterns over unified datasets, enabling seamless integration with legacy HPC workflows and modern cloud-native AI pipelines
+- Implementing dual-protocol storage solution supporting both NFS and S3 access patterns over unified datasets, enabling seamless integration with legacy HPC workflows and modern AI workloads
 - Designing and implementing intelligent node-local (Tier-0) caching and pre-fetching strategies to minimize data access latency, reducing data bottleneck time and increasing GPU utilization to reduce cost-per-GPU-hour (TCO)
-- Benchmarking and profiling storage access patterns for model training/inference workloads and PyTorch/TensorFlow data loading pipelines to identify and eliminate storage bottlenecks impacting GPU utilization
+- Benchmarking and profiling storage access patterns for model training/inference workloads and PyTorch/TensorFlow data loading pipelines to eliminate storage bottlenecks
 - Supporting multi-cluster, multi-vendor storage system enabling rapid deployment of new storage clusters
 
 ---

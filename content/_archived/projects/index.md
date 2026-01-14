@@ -17,7 +17,7 @@ Researching node-local caching architectures to minimize data transfer over netw
 - Pre-fetching strategies based on training iteration patterns
 - Cache eviction policies
 - RDMA integration for sub-microsecond latency data transfers
-- Benchmarking with PyTorch DataLoader and TensorFlow data pipelines
+- Benchmarking with PyTorch and TensorFlow data pipelines
 
 ### Storage Benchmarking for Transformer Training
 Profiling storage I/O patterns for large language model training:

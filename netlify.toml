@@ -1,10 +1,15 @@
 [build]
-  command = "hugo --gc --minify -b $URL"
   publish = "public"
+  command = """
+    pip3 install -r scripts/requirements.txt && \
+    python3 scripts/fetch-notion-notes.py && \
+    hugo --gc --minify -b $URL
+  """
 
 [build.environment]
-  HUGO_VERSION = "0.72.0"
+  HUGO_VERSION = "0.139.4"
   HUGO_ENABLEGITINFO = "true"
+  HUGO_ENV = "production"
 
 [context.production.environment]
   HUGO_ENV = "production"
@@ -24,3 +29,12 @@
   for = "index.xml"
   [headers.values]
     Content-Type = "application/rss+xml"
+
+# SEO and citation headers for technical notes
+[[headers]]
+  for = "/notes/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    X-Robots-Tag = "index, follow"
+    # Enable academic citation metadata
+    Content-Type = "text/html; charset=utf-8"
