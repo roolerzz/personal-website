@@ -300,27 +300,6 @@ Common Challenges faced by the applications were:
 
 ---
 
-## How to Cite This Note
-
-**BibTeX:**
-```bibtex
-@techreport{sethi2025dynamodb2022,
-  author = {Sethi, Hemant},
-  title = {Technical Notes: DynamoDB},
-  year = {2026},
-  url = {https://sethihemant.com/notes/dynamodb-2022/},
-  note = {Accessed: 2026-01-14}
-}
-```
-
-**APA:**
-```
-Sethi, H. (2026). Technical Notes: DynamoDB.
-Retrieved from https://sethihemant.com/notes/dynamodb-2022/
-```
-
----
-
 **Paper Link:** https://www.usenix.org/conference/atc22/presentation/elhemali
 
 ---

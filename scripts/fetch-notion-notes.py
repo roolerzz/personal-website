@@ -7,7 +7,6 @@ This script:
 2. Converts Notion blocks to markdown (preserving structure verbatim)
 3. Downloads images to Hugo static directory
 4. Generates Hugo frontmatter with SEO metadata
-5. Preserves citation information for academic use
 
 Usage:
     python scripts/fetch-notion-notes.py
@@ -266,29 +265,8 @@ weight: 1
     for block in blocks:
         content += block_to_markdown(block, slug, image_counter)
 
-    # Add citation footer
-    citation_footer = f"""
----
-
-## How to Cite This Note
-
-**BibTeX:**
-```bibtex
-@techreport{{sethi2025{slug.replace('-', '')},
-  author = {{Sethi, Hemant}},
-  title = {{Technical Notes: {title}}},
-  year = {{{datetime.now().year}}},
-  url = {{https://sethihemant.com/notes/{slug}/}},
-  note = {{Accessed: {datetime.now().strftime('%Y-%m-%d')}}}
-}}
-```
-
-**APA:**
-```
-Sethi, H. ({datetime.now().year}). Technical Notes: {title}.
-Retrieved from https://sethihemant.com/notes/{slug}/
-```
-
+    # Add footer
+    footer = f"""
 ---
 
 **Paper Link:** {paper_url}
@@ -300,7 +278,7 @@ Retrieved from https://sethihemant.com/notes/{slug}/
 *Questions or discussion? [Email me](mailto:sethi.hemant@gmail.com)*
 """
 
-    full_content = frontmatter + content + citation_footer
+    full_content = frontmatter + content + footer
 
     # Write to Hugo content directory
     note_dir = CONTENT_DIR / slug
