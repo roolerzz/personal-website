@@ -13,7 +13,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 **[Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)** | Amazon's Highly Available Key-Value Store (SOSP 2007)
 
 **[DynamoDB](https://www.usenix.org/conference/atc22/presentation/elhemali)** | Amazon's Fully Managed NoSQL Service (USENIX ATC 2022)
-[Detailed Notes](/notes/dynamodb-2022/)
+[My Notes](/notes/dynamodb-2022/)
 
 **[Spanner](https://storage.googleapis.com/gweb-research2023-media/pubtools/1974.pdf)** | Google's Globally-Distributed Database (OSDI 2012)
 
