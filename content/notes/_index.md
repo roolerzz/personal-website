@@ -32,16 +32,4 @@ Comprehensive study notes on foundational whitepapers, and technical books in di
 
 ---
 
-## How to Cite These Notes
-
-Each note includes BibTeX citation information. These notes are published under my name and can be cited in academic work or referenced in blog posts.
-
-**Example citation:**
-```
-Sethi, H. (2025). Technical Analysis: Amazon DynamoDB.
-Retrieved from https://sethihemant.com/notes/dynamodb-2022/
-```
-
----
-
 *Want to discuss these systems or collaborate on research? [Email me](mailto:sethi.hemant@gmail.com)*

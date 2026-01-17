@@ -4,7 +4,7 @@ layout: "single"
 hideAuthor: true
 ---
 
-I'm a Staff Software Engineer at Crusoe, where I help develop storage solutions for GPU training clusters. My work involves evaluating and integrating storage solutions such as RDMA-enabled object stores, multi-protocol systems, node-local caching etc. while building custom middleware to optimize for AI training workload characteristics.
+I’m a Staff Software Engineer at Crusoe, where I help develop storage solutions for running AI/ML workloads for our customers and helping keep the GPUs fed. My current work involves evaluating and integrating storage solutions such as RDMA-enabled object stores, multi-protocol systems, node-local caching etc and making those available to our customers.
 
 The most interesting problems in AI infrastructure aren't in the models; they're in keeping GPUs fed with data. I focus on the bottlenecks: deep evaluation of competing approaches (RDMA vs. traditional networking, object vs. file interfaces), performance benchmarking against real transformer training patterns, and making architectural recommendations that affect millions in infrastructure spending.
 
