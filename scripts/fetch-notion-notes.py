@@ -20,6 +20,7 @@ import os
 import sys
 import requests
 import json
+import base64
 from pathlib import Path
 from datetime import datetime
 from urllib.parse import urlparse
@@ -113,19 +114,32 @@ def get_page_content(page_id):
 
 
 def download_image(image_url, slug, image_filename):
-    """Download image from Notion CDN to Hugo static directory."""
+    """Download image from Notion CDN or decode base64 data URL to Hugo static directory."""
     # Create directory for this note's images
     note_images_dir = STATIC_DIR / slug
     note_images_dir.mkdir(parents=True, exist_ok=True)
 
     image_path = note_images_dir / image_filename
 
-    # Download image
-    response = requests.get(image_url)
-    if response.status_code == 200:
-        with open(image_path, 'wb') as f:
-            f.write(response.content)
-        return f'/images/notes/{slug}/{image_filename}'
+    # Check if it's a data URL (base64 encoded inline image)
+    if image_url.startswith('data:'):
+        try:
+            # Extract base64 data after the comma
+            header, data = image_url.split(',', 1)
+            image_data = base64.b64decode(data)
+            with open(image_path, 'wb') as f:
+                f.write(image_data)
+            return f'/images/notes/{slug}/{image_filename}'
+        except Exception as e:
+            print(f"ERROR: Failed to decode base64 image: {e}")
+            return None
+    else:
+        # Handle HTTP/HTTPS URLs (regular Notion CDN images)
+        response = requests.get(image_url)
+        if response.status_code == 200:
+            with open(image_path, 'wb') as f:
+                f.write(response.content)
+            return f'/images/notes/{slug}/{image_filename}'
 
     return None
 
