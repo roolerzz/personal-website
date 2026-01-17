@@ -11,17 +11,22 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 ## Distributed Storage & Databases
 
 **[Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)** | Amazon's Highly Available Key-Value Store (SOSP 2007)
+[My Notes](/notes/dynamo-2007/)
 
 **[DynamoDB](https://www.usenix.org/conference/atc22/presentation/elhemali)** | Amazon's Fully Managed NoSQL Service (USENIX ATC 2022)
 [My Notes](/notes/dynamodb-2022/)
 
 **[Spanner](https://storage.googleapis.com/gweb-research2023-media/pubtools/1974.pdf)** | Google's Globally-Distributed Database (OSDI 2012)
+[My Notes](/notes/spanner-2012/)
 
 **[Cassandra](https://research.cs.cornell.edu/ladis2009/papers/lakshman-ladis2009.pdf)** | Distributed Wide-Column Store (LADIS 2009)
+[My Notes](/notes/cassandra-2009/)
 
 **[Bigtable](https://storage.googleapis.com/gweb-research2023-media/pubtools/4443.pdf)** | Distributed Storage for Structured Data (OSDI 2006)
+[My Notes](/notes/bigtable-2006/)
 
 **[Megastore](https://www.cidrdb.org/cidr2011/Papers/CIDR11_Paper32.pdf)** | Scalable, Highly Available Storage (CIDR 2011)
+[My Notes](/notes/megastore-2011/)
 
 ---
 
@@ -44,16 +49,20 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 ## Distributed File Systems
 
 **[Google File System](https://storage.googleapis.com/gweb-research2023-media/pubtools/4446.pdf)** | Large-scale distributed file system (SOSP 2003)
+[My Notes](/notes/gfs-2003/)
 
 **[HDFS](https://pages.cs.wisc.edu/~akella/CS838/F15/838-CloudPapers/hdfs.pdf)** | Hadoop Distributed File System (2010)
+[My Notes](/notes/hdfs-2010/)
 
 ---
 
 ## Consensus & Coordination
 
 **[Raft](https://raft.github.io/)** | Consensus Algorithm (USENIX ATC 2014)
+[My Notes](/notes/raft-2014/)
 
 **[Chubby](https://storage.googleapis.com/gweb-research2023-media/pubtools/4444.pdf)** | Distributed Lock Service (OSDI 2006)
+[My Notes](/notes/chubby-2006/)
 
 **[Paxos Made Live](https://dl.acm.org/doi/10.1145/1281100.1281103)** | Engineering Perspective (PODC 2007)
 
@@ -64,6 +73,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 ## Streaming & Messaging
 
 **[Kafka](https://notes.stephenholiday.com/Kafka.pdf)** | Distributed Append-Only Log (NetDB 2011)
+[My Notes](/notes/kafka-2011/)
 
 **[MapReduce](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)** | Simplified Data Processing (OSDI 2004)
 
@@ -76,6 +86,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 ## Caching & Performance
 
 **[Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf)** | Scaling Memcache (NSDI 2013)
+[My Notes](/notes/memcache-2012/)
 
 **[TAO](https://www.usenix.org/system/files/conference/atc13/atc13-bronson.pdf)** | Facebook's Distributed Data Store (USENIX ATC 2013)
 
