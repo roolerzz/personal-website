@@ -4,11 +4,52 @@ layout: "single"
 hideAuthor: true
 ---
 
-Comprehensive reading list tracking papers and books that inform my work in distributed systems and AI storage infrastructure. For detailed technical analyses, see [Notes](/notes/).
+## Research Interests
+
+My research focuses on **storage systems for AI/ML workloads**, bridging production systems experience with storage research:
+
+**Storage Benchmarking & Characterization**
+Current GPU training benchmarks (MLPerf Storage, DLIO) focus on throughput but miss critical production behaviors: checkpoint I/O burstiness, metadata operation scalability, and S3 API compatibility edge cases. I'm developing evaluation methodologies that capture these real-world dimensions, informed by production deployments at Crusoe.
+
+**RDMA Object Storage & Accelerated I/O**
+Exploring RDMA-based object storage architectures (S3+RDMA) and tier-0 caching systems that reduce checkpoint latency for GPU training. 
+
+**Storage Evaluation Frameworks**
+Developing framework for evaluating object storage systems beyond throughput: S3 compatibility testing, failure mode analysis, operational complexity metrics, and total cost of ownership.  Investigating trade-offs between file systems (Lustre, DAOS, 3FS) and emerging disaggregated object storage vendors.
 
 ---
 
-## Distributed Storage & Databases
+### Current Work
+
+Evaluating object storage vendors for GPU training clusters at Crusoe. Member of MLCommons Storage Working Groups (Object Storage, Accelerated IO, KVCache) and currently looking to contribute to SNIA's Technical Working Groups (Cloud Object Storage Test Tools Group, Accelerated IO).
+
+**Prospective Papers that I am working on:**
+- "Storage Performance Characterization for GPU Training Workloads"
+- "A Practitioner's Framework for Evaluating Object Storage for AI Workloads"
+
+---
+
+## Research Background
+
+Foundational papers and recent advances that inform my work. For detailed technical analyses, see [Technical Notes](/notes/).
+
+### AI Storage & ML Infrastructure
+
+**[3FS (Fire-Flyer File System)](https://github.com/deepseek-ai/3FS)** | DeepSeek's RDMA-based Distributed File System
+
+**[Fire-Flyer AI-HPC](https://arxiv.org/html/2408.14158v1)** | Cost-Effective Software-Hardware Co-Design (SC 2024)
+
+**[RDMA-First Object Storage with SmartNIC Offload](https://arxiv.org/html/2509.13997v1)** | Low-latency GPU storage
+
+**[DAOS](https://dl.acm.org/doi/10.1007/978-3-030-48842-0_3)** | Storage Stack for Storage Class Memory
+
+**[Benchmarking All-Flash Storage for HPC](https://pdsw.org/pdsw21/papers/ws_pdsw_paper_S2_P1_paper-lockwood.pdf)** | Storage benchmarking methodologies (PDSW 2021)
+
+**[io_uring for High-Performance DBMSs](https://arxiv.org/pdf/2512.04859v1)** | Modern Linux async I/O
+
+---
+
+### Distributed Storage & Databases
 
 **[Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)** | Amazon's Highly Available Key-Value Store (SOSP 2007)
 [My Notes](/notes/dynamo-2007/)
@@ -30,23 +71,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 
 ---
 
-## AI Storage & ML Infrastructure
-
-**[3FS (Fire-Flyer File System)](https://github.com/deepseek-ai/3FS)** | DeepSeek's RDMA-based Distributed File System
-
-**[Fire-Flyer AI-HPC](https://arxiv.org/html/2408.14158v1)** | Cost-Effective Software-Hardware Co-Design (SC 2024)
-
-**[RDMA-First Object Storage with SmartNIC Offload](https://arxiv.org/html/2509.13997v1)** | Low-latency GPU storage
-
-**[DAOS](https://dl.acm.org/doi/10.1007/978-3-030-48842-0_3)** | Storage Stack for Storage Class Memory
-
-**[Benchmarking All-Flash Storage for HPC](https://pdsw.org/pdsw21/papers/ws_pdsw_paper_S2_P1_paper-lockwood.pdf)** | Storage benchmarking methodologies (PDSW 2021)
-
-**[io_uring for High-Performance DBMSs](https://arxiv.org/pdf/2512.04859v1)** | Modern Linux async I/O
-
----
-
-## Distributed File Systems
+### Distributed File Systems
 
 **[Google File System](https://storage.googleapis.com/gweb-research2023-media/pubtools/4446.pdf)** | Large-scale distributed file system (SOSP 2003)
 [My Notes](/notes/gfs-2003/)
@@ -56,7 +81,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 
 ---
 
-## Consensus & Coordination
+### Consensus & Coordination
 
 **[Raft](https://raft.github.io/)** | Consensus Algorithm (USENIX ATC 2014)
 [My Notes](/notes/raft-2014/)
@@ -70,7 +95,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 
 ---
 
-## Streaming & Messaging
+### Streaming & Messaging
 
 **[Kafka](https://notes.stephenholiday.com/Kafka.pdf)** | Distributed Append-Only Log (NetDB 2011)
 [My Notes](/notes/kafka-2011/)
@@ -83,7 +108,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 
 ---
 
-## Caching & Performance
+### Caching & Performance
 
 **[Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf)** | Scaling Memcache (NSDI 2013)
 [My Notes](/notes/memcache-2012/)
@@ -92,7 +117,7 @@ Comprehensive reading list tracking papers and books that inform my work in dist
 
 ---
 
-## Books
+### Books
 
 **[Designing Data-Intensive Applications](https://dataintensive.net/)** by Martin Kleppmann
 
