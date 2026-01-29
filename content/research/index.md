@@ -12,7 +12,7 @@ My research focuses on **storage systems for AI/ML workloads**, bridging product
 Current GPU training benchmarks (MLPerf Storage, DLIO) focus on throughput but miss critical production behaviors: checkpoint I/O burstiness, metadata operation scalability, and S3 API compatibility edge cases. I'm developing evaluation methodologies that capture these real-world dimensions, informed by production deployments at Crusoe.
 
 **RDMA Object Storage & Accelerated I/O**
-Exploring RDMA-based object storage architectures (S3+RDMA) and tier-0 caching systems that reduce checkpoint latency for GPU training. 
+Exploring RDMA-based object storage architectures (S3/RDMA) and tier-0 caching systems that reduce checkpoint latency for GPU training. 
 
 **Storage Evaluation Frameworks**
 Developing framework for evaluating object storage systems beyond throughput: S3 compatibility testing, failure mode analysis, operational complexity metrics, and total cost of ownership.  Investigating trade-offs between file systems (Lustre, DAOS, 3FS) and emerging disaggregated object storage vendors.
@@ -21,11 +21,11 @@ Developing framework for evaluating object storage systems beyond throughput: S3
 
 ### Current Work
 
-Evaluating object storage vendors for GPU training clusters at Crusoe. Member of MLCommons Storage Working Groups (Object Storage, Accelerated IO, KVCache) and currently looking to contribute to SNIA's Technical Working Groups (Cloud Object Storage Test Tools Group, Accelerated IO).
+Evaluating object storage vendors for GPU training clusters at Crusoe. Member of MLCommons Storage Working Groups (Object Storage, Accelerated IO) and currently looking to contribute to SNIA's Technical Working Groups (Cloud Object Storage Test Tools Group, Accelerated IO).
 
-**Prospective Papers that I am working on:**
-- "Storage Performance Characterization for GPU Training Workloads"
-- "A Practitioner's Framework for Evaluating Object Storage for AI Workloads"
+**Looking to collaborate on the following research:**
+- Storage Performance Characterization for AI Training Workloads
+- Framework for Evaluating Object Storage vendors for AI Workloads
 
 ---
 

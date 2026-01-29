@@ -1,6 +1,15 @@
 # IDEs
 .idea/
+
 # Hugo
 resources/
 public/
 .private/
+
+# Generated notes from Notion (fetched on build)
+content/notes/*/
+!content/notes/_index.md
+static/images/notes/*/
+
+# Local environment
+.env.local
