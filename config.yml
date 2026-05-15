@@ -52,6 +52,8 @@ params:
         url: /posts/
       - name: Notes
         url: /notes/
+      - name: Resume
+        url: /HemantSethiResume.pdf
 
   # Social Icons
   socialIcons:
@@ -91,6 +93,10 @@ menu:
       name: Notes
       url: /notes/
       weight: 50
+    - identifier: resume
+      name: Resume
+      url: /HemantSethiResume.pdf
+      weight: 60
 
 # Taxonomies
 taxonomies:
