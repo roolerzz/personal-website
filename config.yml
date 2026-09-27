@@ -48,6 +48,8 @@ params:
         url: /experience/
       - name: Research
         url: /research/
+      - name: Service
+        url: /service/
       - name: Blog
         url: /posts/
       - name: Notes
@@ -85,6 +87,10 @@ menu:
       name: Research
       url: /research/
       weight: 30
+    - identifier: service
+      name: Service
+      url: /service/
+      weight: 35
     - identifier: blog
       name: Blog
       url: /posts/
