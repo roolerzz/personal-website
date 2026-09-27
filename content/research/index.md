@@ -27,6 +27,22 @@ Evaluating object storage vendors for GPU training clusters at Crusoe. Member of
 
 ---
 
+## Program Committees
+
+**Artifact Evaluation Committee**
+- [SIGCOMM '26](https://conferences.sigcomm.org/sigcomm/2026/)
+- [NSDI '27](https://www.usenix.org/conference/nsdi27)
+- [FAST '27](https://www.usenix.org/conference/fast27)
+- [EuroSys '27](https://2027.eurosys.org/)
+- [USENIX ATC '26](https://www.usenix.org/conference/atc26)
+- [CGO '27](https://conf.researchr.org/home/cgo-2027)
+
+**Reviewer**
+- [NeurIPS ML for Systems '26](https://mlforsystems.org/)
+- [NeurIPS Agents in the Wild '26](https://agentwild-workshop.github.io/neurips2026/)
+
+---
+
 ## Readings
 
 I am capturing the Research Papers that have helped me learn I will also be capturing my reading notes [here](/notes/).
